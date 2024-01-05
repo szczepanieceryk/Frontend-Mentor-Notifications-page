@@ -1,0 +1,29 @@
+@use "../styles/abstracts/variables/colors";
+
+.notification-page-wrapper {
+  .notifications-info {
+    display: flex;
+    justify-content: space-around;
+    .notification-count-info {
+      .notifications-count-label {
+        font-size: 20px;
+        color: colors.$blue;
+      }
+      .notification-counter {
+        padding: 0.2em;
+        display: inline;
+        border-radius: 0.3em;
+        color: colors.$white;
+        background-color: colors.$blue;
+      }
+    }
+    .mark-as-read {
+      color: colors.$dark-grayish-blue;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: colors.$blue;
+      }
+    }
+  }
+}

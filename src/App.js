@@ -1,10 +1,15 @@
+import { useState } from "react";
 import NotificationPage from "./pages/NotificationPage";
-import "./styles/App.css";
+import "./styles/style.css";
 
 const App = () => {
+  const [notificationCount, setNotificationCount] = useState(3);
   return (
     <div className="App">
-      <NotificationPage />
+      <NotificationPage
+        notificationCount={notificationCount}
+        setNotificationCount={setNotificationCount}
+      />
     </div>
   );
 };
