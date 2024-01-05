@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Frontend-Mentor-Notifications-page/static/css/main.1a821e65.css",
+    "main.js": "/Frontend-Mentor-Notifications-page/static/js/main.abfb003e.js",
+    "static/media/avatar-angela-gray.webp": "/Frontend-Mentor-Notifications-page/static/media/avatar-angela-gray.be3397e8fa98e1cac926.webp",
+    "index.html": "/Frontend-Mentor-Notifications-page/index.html",
+    "main.1a821e65.css.map": "/Frontend-Mentor-Notifications-page/static/css/main.1a821e65.css.map",
+    "main.abfb003e.js.map": "/Frontend-Mentor-Notifications-page/static/js/main.abfb003e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a821e65.css",
+    "static/js/main.abfb003e.js"
+  ]
+}
