@@ -1,7 +1,9 @@
 import SimpleNotificationComponent from "../components/SimpleNotificationComponent";
 import "../styles/_NotificationPage.scss";
+import userAvatar from "../images/avatar-angela-gray.webp";
 
 const NotificationPage = ({ notificationCount, setNotificationCount }) => {
+  const unActiveNotifications = [];
   const handleNotificationsClear = () => {
     setNotificationCount(0);
   };
@@ -20,7 +22,12 @@ const NotificationPage = ({ notificationCount, setNotificationCount }) => {
           <strong onClick={handleNotificationsClear}>Mark all as read</strong>
         </span>
       </div>
-      <SimpleNotificationComponent />
+      <SimpleNotificationComponent
+        userThumbnail={userAvatar}
+        userName="Kimberly Smith"
+        notification="commented on your picture"
+        time="1 week ago"
+      />
     </div>
   );
 };

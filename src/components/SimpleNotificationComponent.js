@@ -1,25 +1,29 @@
 import "../styles/_SimpleNotificationComponent.scss";
-import userAvatar from "../images/avatar-angela-gray.webp";
 
-const SimpleNotificationComponent = () => {
+const SimpleNotificationComponent = ({
+  userThumbnail,
+  userName,
+  notification,
+  time,
+}) => {
   return (
-    <div className="simple-notification-component-wrapper">
+    <div className="simple-notification-component-wrapper active">
       <img
-        src={userAvatar}
+        src={userThumbnail}
         alt="user profile thumbnail"
         className="user-avatar-thumbnail"
       />
       <div className="notification-content">
         <div className="notification-info">
           <span className="user-name">
-            <strong>Angela Gray</strong>
+            <strong>{userName}</strong>
           </span>
           <span className="notification-message">
-            <strong>followed you</strong>
+            <strong>{notification}</strong>
           </span>
-          <div className="active-notification"></div>
+          <div className="active-notification active"></div>
         </div>
-        <span className="notification-time">5m ago</span>
+        <span className="notification-time">{time}</span>
       </div>
     </div>
   );

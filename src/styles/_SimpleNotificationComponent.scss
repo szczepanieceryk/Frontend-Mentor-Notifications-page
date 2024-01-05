@@ -7,7 +7,9 @@
   display: flex;
   justify-content: flex-start;
   border-radius: 0.5em;
-  background-color: colors.$light-grayish-blue-1;
+  &.active {
+    background-color: colors.$light-grayish-blue-1;
+  }
   .user-avatar-thumbnail {
     width: 50px;
     height: 50px;
@@ -27,7 +29,9 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background-color: colors.$red;
+      &.active {
+        background-color: colors.$red;
+      }
     }
     .notification-time {
       display: flex;
