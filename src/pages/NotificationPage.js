@@ -3,7 +3,6 @@ import "../styles/_NotificationPage.scss";
 import userAvatar from "../images/avatar-angela-gray.webp";
 
 const NotificationPage = ({ notificationCount, setNotificationCount }) => {
-  const unActiveNotifications = [];
   const handleNotificationsClear = () => {
     setNotificationCount(0);
   };
