@@ -1,6 +1,7 @@
 import "../styles/_SimpleNotificationComponent.scss";
 
 const SimpleNotificationComponent = ({
+  activeClass,
   userThumbnail,
   userName,
   notification,
@@ -9,7 +10,11 @@ const SimpleNotificationComponent = ({
   time,
 }) => {
   return (
-    <div className="simple-notification-component-wrapper">
+    <div
+      className={`simple-notification-component-wrapper ${
+        activeClass ? "active" : ""
+      }`}
+    >
       <img
         src={userThumbnail}
         alt="user profile thumbnail"

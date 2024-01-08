@@ -23,6 +23,7 @@ const NotificationPage = ({ notificationCount, setNotificationCount }) => {
         </span>
       </div>
       <SimpleNotificationComponent
+        activeClass=""
         userThumbnail={userAvatar1}
         userName="Nathan Peterson"
         notification="reacted to your recent post"
@@ -31,6 +32,7 @@ const NotificationPage = ({ notificationCount, setNotificationCount }) => {
         time="2 weeks ago"
       />
       <SimpleNotificationComponent
+        activeClass=""
         userThumbnail={userAvatar2}
         userName="Anna Kim"
         notification="left the group"

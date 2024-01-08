@@ -29,6 +29,12 @@
 .simple-notification-component-wrapper .notification-content .notification-message {
   color: hsl(219deg, 14%, 63%);
 }
+.simple-notification-component-wrapper .notification-content .notification-message.reaction-activity {
+  color: hsl(219deg, 12%, 42%);
+}
+.simple-notification-component-wrapper .notification-content .notification-message.group-activity {
+  color: hsl(219deg, 85%, 26%);
+}
 .simple-notification-component-wrapper .notification-content .active-notification {
   width: 8px;
   height: 8px;
