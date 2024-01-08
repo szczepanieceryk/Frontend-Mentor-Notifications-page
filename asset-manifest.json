@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/Frontend-Mentor-Notifications-page/static/css/main.1a821e65.css",
-    "main.js": "/Frontend-Mentor-Notifications-page/static/js/main.abfb003e.js",
+    "main.css": "/Frontend-Mentor-Notifications-page/static/css/main.78226c04.css",
+    "main.js": "/Frontend-Mentor-Notifications-page/static/js/main.13ba916d.js",
+    "static/media/avatar-jacob-thompson.webp": "/Frontend-Mentor-Notifications-page/static/media/avatar-jacob-thompson.ef1880754355ebe956bb.webp",
+    "static/media/avatar-nathan-peterson.webp": "/Frontend-Mentor-Notifications-page/static/media/avatar-nathan-peterson.03727540c8ed8341d745.webp",
+    "static/media/avatar-anna-kim.webp": "/Frontend-Mentor-Notifications-page/static/media/avatar-anna-kim.14242399b99facbf45c7.webp",
+    "static/media/avatar-mark-webber.webp": "/Frontend-Mentor-Notifications-page/static/media/avatar-mark-webber.e3e820b976dfaf7f762a.webp",
     "static/media/avatar-angela-gray.webp": "/Frontend-Mentor-Notifications-page/static/media/avatar-angela-gray.be3397e8fa98e1cac926.webp",
     "index.html": "/Frontend-Mentor-Notifications-page/index.html",
-    "main.1a821e65.css.map": "/Frontend-Mentor-Notifications-page/static/css/main.1a821e65.css.map",
-    "main.abfb003e.js.map": "/Frontend-Mentor-Notifications-page/static/js/main.abfb003e.js.map"
+    "main.78226c04.css.map": "/Frontend-Mentor-Notifications-page/static/css/main.78226c04.css.map",
+    "main.13ba916d.js.map": "/Frontend-Mentor-Notifications-page/static/js/main.13ba916d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a821e65.css",
-    "static/js/main.abfb003e.js"
+    "static/css/main.78226c04.css",
+    "static/js/main.13ba916d.js"
   ]
 }
