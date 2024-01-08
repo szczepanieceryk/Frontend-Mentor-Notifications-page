@@ -4,10 +4,12 @@ const SimpleNotificationComponent = ({
   userThumbnail,
   userName,
   notification,
+  reactionActivity,
+  groupActivity,
   time,
 }) => {
   return (
-    <div className="simple-notification-component-wrapper active">
+    <div className="simple-notification-component-wrapper">
       <img
         src={userThumbnail}
         alt="user profile thumbnail"
@@ -19,7 +21,13 @@ const SimpleNotificationComponent = ({
             <strong>{userName}</strong>
           </span>
           <span className="notification-message">
-            <strong>{notification}</strong>
+            <strong>{notification} </strong>
+          </span>
+          <span className="notification-message reaction-activity">
+            <strong>{reactionActivity} </strong>
+          </span>
+          <span className="notification-message group-activity">
+            <strong>{groupActivity}</strong>
           </span>
           <div className="active-notification active"></div>
         </div>

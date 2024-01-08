@@ -1,6 +1,7 @@
 import SimpleNotificationComponent from "../components/SimpleNotificationComponent";
 import "../styles/_NotificationPage.scss";
-import userAvatar from "../images/avatar-angela-gray.webp";
+import userAvatar1 from "../images/avatar-nathan-peterson.webp";
+import userAvatar2 from "../images/avatar-anna-kim.webp";
 
 const NotificationPage = ({ notificationCount, setNotificationCount }) => {
   const handleNotificationsClear = () => {
@@ -22,10 +23,20 @@ const NotificationPage = ({ notificationCount, setNotificationCount }) => {
         </span>
       </div>
       <SimpleNotificationComponent
-        userThumbnail={userAvatar}
-        userName="Kimberly Smith"
-        notification="commented on your picture"
-        time="1 week ago"
+        userThumbnail={userAvatar1}
+        userName="Nathan Peterson"
+        notification="reacted to your recent post"
+        reactionActivity="5 end-game strategies to increase your win rate"
+        groupActivity=""
+        time="2 weeks ago"
+      />
+      <SimpleNotificationComponent
+        userThumbnail={userAvatar2}
+        userName="Anna Kim"
+        notification="left the group"
+        reactionActivity=""
+        groupActivity="Chess Club"
+        time="2 weeks ago"
       />
     </div>
   );

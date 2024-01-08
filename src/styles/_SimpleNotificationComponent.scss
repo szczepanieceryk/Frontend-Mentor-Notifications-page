@@ -24,6 +24,12 @@
     }
     .notification-message {
       color: colors.$grayish-blue;
+      &.reaction-activity {
+        color: colors.$dark-grayish-blue;
+      }
+      &.group-activity {
+        color: colors.$blue;
+      }
     }
     .active-notification {
       width: 8px;
