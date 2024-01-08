@@ -1,6 +1,6 @@
-import "../styles/_SimpleNotificationComponent.scss";
+import "../styles/_NotificationComponent.scss";
 
-const SimpleNotificationComponent = ({
+const NotificationComponent = ({
   activeClass,
   userThumbnail,
   userName,
@@ -8,6 +8,7 @@ const SimpleNotificationComponent = ({
   reactionActivity,
   groupActivity,
   time,
+  message,
 }) => {
   return (
     <div
@@ -39,9 +40,12 @@ const SimpleNotificationComponent = ({
           ></div>
         </div>
         <span className="notification-time">{time}</span>
+        <div className={`message-wrapper ${message ? "active" : ""}`}>
+          <span className="message-txt">{message}</span>
+        </div>
       </div>
     </div>
   );
 };
 
-export default SimpleNotificationComponent;
+export default NotificationComponent;

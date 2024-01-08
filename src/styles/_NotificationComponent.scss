@@ -43,5 +43,12 @@
       display: flex;
       color: colors.$grayish-blue;
     }
+    .message-wrapper.active {
+      margin: 0.5em auto;
+      padding: 0.7em;
+      border-radius: 0.3em;
+      border: 0.3px solid colors.$dark-grayish-blue;
+      color: colors.$grayish-blue;
+    }
   }
 }

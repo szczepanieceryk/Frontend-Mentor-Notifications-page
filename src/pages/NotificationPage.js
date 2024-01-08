@@ -1,4 +1,4 @@
-import SimpleNotificationComponent from "../components/SimpleNotificationComponent";
+import NotificationComponent from "../components/NotificationComponent";
 import "../styles/_NotificationPage.scss";
 
 const NotificationPage = ({
@@ -28,7 +28,7 @@ const NotificationPage = ({
       </div>
 
       {newNotifications.map((notif) => (
-        <SimpleNotificationComponent
+        <NotificationComponent
           key={notif.id}
           activeClass={notif.activeClass}
           userThumbnail={notif.userThumbnail}
@@ -37,11 +37,12 @@ const NotificationPage = ({
           reactionActivity={notif.reactionActivity}
           groupActivity={notif.groupActivity}
           time={notif.time}
+          message={notif.message}
         />
       ))}
 
       {oldNotifications.map((notif) => (
-        <SimpleNotificationComponent
+        <NotificationComponent
           key={notif.id}
           activeClass={notif.activeClass}
           userThumbnail={notif.userThumbnail}
@@ -50,6 +51,7 @@ const NotificationPage = ({
           reactionActivity={notif.reactionActivity}
           groupActivity={notif.groupActivity}
           time={notif.time}
+          message={notif.message}
         />
       ))}
     </div>
