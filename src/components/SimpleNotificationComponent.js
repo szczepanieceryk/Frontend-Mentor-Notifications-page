@@ -34,7 +34,9 @@ const SimpleNotificationComponent = ({
           <span className="notification-message group-activity">
             <strong>{groupActivity}</strong>
           </span>
-          <div className="active-notification active"></div>
+          <div
+            className={`active-notification ${activeClass ? "active" : ""}`}
+          ></div>
         </div>
         <span className="notification-time">{time}</span>
       </div>
