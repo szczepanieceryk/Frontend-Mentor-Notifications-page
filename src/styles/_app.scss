@@ -1,3 +1,8 @@
+@use "./abstracts/variables/fonts";
+
+body {
+  font-family: fonts.$font-family;
+}
 .App {
   padding: 0.5em;
 }
