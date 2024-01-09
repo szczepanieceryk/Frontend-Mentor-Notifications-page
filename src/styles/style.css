@@ -1,9 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Plus Jakarta Sans", Arial sans-serif;
 }
 
-.App {
+.app-wrapper {
   padding: 0.5em;
+}
+.app-wrapper .attribution {
+  margin: 4em auto 0;
+  font-size: 11px;
+  text-align: center;
+}
+.app-wrapper .attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
 
 .simple-notification-component-wrapper {
