@@ -6,6 +6,7 @@ const NotificationComponent = ({
   userName,
   notification,
   reactionActivity,
+  reactionImg,
   groupActivity,
   time,
   message,
@@ -39,6 +40,11 @@ const NotificationComponent = ({
             className={`active-notification ${activeClass ? "active" : ""}`}
           ></div>
         </div>
+        <img
+          src={reactionImg}
+          alt="reaction thumbnail"
+          className={`reaction-img ${reactionImg ? "show" : "hide"}`}
+        />
         <span className="notification-time">{time}</span>
         <div className={`message-wrapper ${message ? "active" : ""}`}>
           <span className="message-txt">{message}</span>

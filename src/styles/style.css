@@ -1,9 +1,9 @@
 .App {
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .simple-notification-component-wrapper {
-  margin: 0.5em auto;
+  margin: 0.7em auto;
   padding: 0.7em;
   width: 90%;
   max-width: 700px;
@@ -14,9 +14,12 @@
 .simple-notification-component-wrapper.active {
   background-color: hsl(211deg, 68%, 94%);
 }
-.simple-notification-component-wrapper .user-avatar-thumbnail {
+.simple-notification-component-wrapper .user-avatar-thumbnail,
+.simple-notification-component-wrapper .reaction-img {
   width: 50px;
   height: 50px;
+}
+.simple-notification-component-wrapper .user-avatar-thumbnail {
   margin-right: 1em;
 }
 .simple-notification-component-wrapper .notification-content {
@@ -42,6 +45,12 @@
 }
 .simple-notification-component-wrapper .notification-content .active-notification.active {
   background-color: hsl(1deg, 90%, 64%);
+}
+.simple-notification-component-wrapper .notification-content .reaction-img.show {
+  display: flex;
+}
+.simple-notification-component-wrapper .notification-content .reaction-img.hide {
+  display: none;
 }
 .simple-notification-component-wrapper .notification-content .notification-time {
   display: flex;

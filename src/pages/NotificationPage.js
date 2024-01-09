@@ -34,6 +34,7 @@ const NotificationPage = ({
           userName={notif.userName}
           notification={notif.notification}
           reactionActivity={notif.reactionActivity}
+          reactionImg={notif.reactionImg}
           groupActivity={notif.groupActivity}
           time={notif.time}
           message={notif.message}
