@@ -1,5 +1,19 @@
 import "../styles/_NotificationComponent.scss";
 
+// This is component of a single Notification
+
+// it takes as a parameters:
+
+// avtiveClass - string to determine if notification is an active one or not
+// userThumbnail - object or a path to an user avatar thumbnail
+// userName - string representing user name
+// notification - string general notification type
+// reactionActivity - string more specific notification
+// reactionImg - object or a path to an image user reacted
+// time - string when the notification showed up
+// message - string of a private message sent to an user
+
+// If any of parameters don't have a place in appropriate notification, empty string is an default opption
 const NotificationComponent = ({
   activeClass,
   userThumbnail,
