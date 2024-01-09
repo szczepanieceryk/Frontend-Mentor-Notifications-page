@@ -11,32 +11,7 @@ import userAvatar6 from "./images/avatar-rizky-hasanuddin.webp";
 
 const App = () => {
   const [notificationCount, setNotificationCount] = useState(3);
-  const oldNotifications = [
-    {
-      id: 1,
-      activeClass: "",
-      userThumbnail: userAvatar1,
-      userName: "Nathan Peterson",
-      notification: "reacted to your recent post",
-      reactionActivity: "5 end-game strategies to increase your win rate",
-      groupActivity: "",
-      time: "2 weeks ago",
-      message: "",
-    },
-    {
-      id: 2,
-      activeClass: "",
-      userThumbnail: userAvatar2,
-      userName: "Anna Kim",
-      notification: "left the group",
-      reactionActivity: "",
-      groupActivity: "Chess Club",
-      time: "2 weeks ago",
-      message: "",
-    },
-  ];
-
-  const activeNotifications = [
+  const notificationsData = [
     {
       id: 1,
       activeClass: "active",
@@ -82,14 +57,35 @@ const App = () => {
       message:
         "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     },
+    {
+      id: 5,
+      activeClass: "",
+      userThumbnail: userAvatar1,
+      userName: "Nathan Peterson",
+      notification: "reacted to your recent post",
+      reactionActivity: "5 end-game strategies to increase your win rate",
+      groupActivity: "",
+      time: "2 weeks ago",
+      message: "",
+    },
+    {
+      id: 6,
+      activeClass: "",
+      userThumbnail: userAvatar2,
+      userName: "Anna Kim",
+      notification: "left the group",
+      reactionActivity: "",
+      groupActivity: "Chess Club",
+      time: "2 weeks ago",
+      message: "",
+    },
   ];
   return (
     <div className="App">
       <NotificationPage
         notificationCount={notificationCount}
         setNotificationCount={setNotificationCount}
-        newNotifications={activeNotifications}
-        oldNotifications={oldNotifications}
+        notificationsData={notificationsData}
       />
     </div>
   );

@@ -4,8 +4,7 @@ import "../styles/_NotificationPage.scss";
 const NotificationPage = ({
   notificationCount,
   setNotificationCount,
-  newNotifications,
-  oldNotifications,
+  notificationsData,
 }) => {
   const handleNotificationsClear = () => {
     setNotificationCount(0);
@@ -27,21 +26,7 @@ const NotificationPage = ({
         </span>
       </div>
 
-      {newNotifications.map((notif) => (
-        <NotificationComponent
-          key={notif.id}
-          activeClass={notif.activeClass}
-          userThumbnail={notif.userThumbnail}
-          userName={notif.userName}
-          notification={notif.notification}
-          reactionActivity={notif.reactionActivity}
-          groupActivity={notif.groupActivity}
-          time={notif.time}
-          message={notif.message}
-        />
-      ))}
-
-      {oldNotifications.map((notif) => (
+      {notificationsData.map((notif) => (
         <NotificationComponent
           key={notif.id}
           activeClass={notif.activeClass}
