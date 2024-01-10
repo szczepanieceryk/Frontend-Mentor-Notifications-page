@@ -6,5 +6,5 @@ This is a solution to the [Notifications page](https://www.frontendmentor.io/cha
 
 # Links
 
-[Live Site]()
-[Solution]()
+[Live Site](https://szczepanieceryk.github.io/Frontend-Mentor-Notifications-page/)
+[Solution](https://www.frontendmentor.io/solutions/interactive-notification-page-done-with-react-RsGmVfCPki)
