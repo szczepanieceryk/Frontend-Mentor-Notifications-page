@@ -15,6 +15,7 @@ import "./styles/style.css";
 
 const App = () => {
   const [notificationCount, setNotificationCount] = useState(3);
+
   const notificationsData = [
     {
       id: 1,
@@ -101,6 +102,7 @@ const App = () => {
       message: "",
     },
   ];
+
   return (
     <div className="app-wrapper">
       <NotificationPage
@@ -108,9 +110,13 @@ const App = () => {
         setNotificationCount={setNotificationCount}
         notificationsData={notificationsData}
       />
-      <div class="attribution">
+      <div className="attribution">
         Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
           Frontend Mentor
         </a>
         . Coded by{" "}

@@ -1,4 +1,5 @@
 @use "./abstracts/variables/fonts";
+@use "./abstracts/variables/colors";
 
 body {
   font-family: fonts.$font-family;
@@ -10,7 +11,7 @@ body {
     font-size: 11px;
     text-align: center;
     a {
-      color: hsl(228, 45%, 44%);
+      color: colors.$link-blue;
     }
   }
 }
