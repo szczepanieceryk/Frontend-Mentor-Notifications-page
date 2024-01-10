@@ -3,9 +3,12 @@
 
 body {
   font-family: fonts.$font-family;
+  height: 100vh;
+  background-color: colors.$very-light-grayish-blue;
 }
 .app-wrapper {
   padding: 0.5em;
+
   .attribution {
     margin: 4em auto 0;
     font-size: 11px;
