@@ -4,6 +4,7 @@ import NotificationPage from "./pages/NotificationPage";
 import notificationsData from "./NotificationData";
 
 import "./styles/style.css";
+import Footer from "./pages/Footer";
 
 const App = () => {
   const [notificationCount, setNotificationCount] = useState(3);
@@ -15,18 +16,7 @@ const App = () => {
         setNotificationCount={setNotificationCount}
         notificationsData={notificationsData}
       />
-      <div className="attribution">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by{" "}
-        <a href="https://github.com/szczepanieceryk">Eryk Szczepaniec</a>.
-      </div>
+      <Footer />
     </div>
   );
 };
