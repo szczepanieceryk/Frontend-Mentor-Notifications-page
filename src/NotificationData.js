@@ -1,8 +1,6 @@
 import userAvatar1 from "./images/avatar-mark-webber.webp";
 import userAvatar2 from "./images/avatar-angela-gray.webp";
 import userAvatar3 from "./images/avatar-jacob-thompson.webp";
-import userAvatar4 from "./images/avatar-kimberly-smith.webp";
-import user4ReactImage from "./images/image-chess.webp";
 import userAvatar5 from "./images/avatar-rizky-hasanuddin.webp";
 import userAvatar6 from "./images/avatar-nathan-peterson.webp";
 import userAvatar7 from "./images/avatar-anna-kim.webp";
@@ -59,18 +57,6 @@ const notificationsData = [
   {
     id: 5,
     activeClass: "",
-    userThumbnail: userAvatar4,
-    userName: "Kimberly Smith",
-    notification: "commented on your picture",
-    reactionActivity: "",
-    reactionImg: user4ReactImage,
-    groupActivity: "",
-    time: "1 week ago",
-    message: "",
-  },
-  {
-    id: 6,
-    activeClass: "",
     userThumbnail: userAvatar6,
     userName: "Nathan Peterson",
     notification: "reacted to your recent post",
@@ -81,7 +67,7 @@ const notificationsData = [
     message: "",
   },
   {
-    id: 7,
+    id: 6,
     activeClass: "",
     userThumbnail: userAvatar7,
     userName: "Anna Kim",

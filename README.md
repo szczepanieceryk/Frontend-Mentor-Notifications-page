@@ -1,5 +1,10 @@
 # Frontend Mentor - Notifications page
 
-## Project in progress ...
+This is a solution to the [Notifications page](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC) challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### If you want to see my work, feel free to check my other repositories
+![Design preview for Notifications page coding challenge](./src/images/design-preview.png)
+
+# Links
+
+[Live Site]()
+[Solution]()
