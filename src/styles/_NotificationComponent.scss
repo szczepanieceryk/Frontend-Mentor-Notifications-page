@@ -8,7 +8,7 @@
   justify-content: flex-start;
   border-radius: 0.5em;
   &.active {
-    background-color: colors.$light-grayish-blue-1;
+    background-color: colors.$very-light-grayish-blue;
   }
   .user-avatar-thumbnail,
   .reaction-img {
@@ -22,9 +22,21 @@
   .notification-content {
     display: flex;
     flex-direction: column;
-    // justify-content: flex-start;
     .user-name {
       margin-right: 0.2em;
+    }
+    .user-name,
+    .notification-message.reaction-activity,
+    .notification-message.group-activity {
+      cursor: pointer;
+      transition: 0.3s;
+      color: colors.$very-dark-blue;
+    }
+    .user-name:hover,
+    .notification-message.reaction-activity:hover,
+    .notification-message.group-activity:hover {
+      cursor: pointer;
+      color: colors.$link-blue;
     }
     .notification-message {
       color: colors.$grayish-blue;
@@ -45,11 +57,9 @@
     }
 
     .reaction-img {
-      &.show {
+      display: none;
+      &.active {
         display: flex;
-      }
-      &.hide {
-        display: none;
       }
     }
 
@@ -57,12 +67,22 @@
       display: flex;
       color: colors.$grayish-blue;
     }
-    .message-wrapper.active {
+    .message-wrapper {
+      display: none;
       margin: 0.5em auto;
       padding: 0.7em;
       border-radius: 0.3em;
       border: 0.3px solid colors.$dark-grayish-blue;
       color: colors.$grayish-blue;
+      cursor: pointer;
+      transition: 0.3s;
+      &.active {
+        display: flex;
+      }
+      &:hover {
+        background-color: colors.$light-grayish-blue-1;
+        border: 0.3px solid transparent;
+      }
     }
   }
 }

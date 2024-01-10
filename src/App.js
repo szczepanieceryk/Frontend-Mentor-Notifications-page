@@ -55,18 +55,6 @@ const App = () => {
     {
       id: 4,
       activeClass: "",
-      userThumbnail: userAvatar4,
-      userName: "Kimberly Smith",
-      notification: "commented on your picture",
-      reactionActivity: "",
-      reactionImg: user4ReactImage,
-      groupActivity: "",
-      time: "1 week ago",
-      message: "",
-    },
-    {
-      id: 5,
-      activeClass: "",
       userThumbnail: userAvatar5,
       userName: "Rizky Hasanuddin",
       notification: "sent you a private message",
@@ -76,6 +64,18 @@ const App = () => {
       time: "5 days ago",
       message:
         "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+    },
+    {
+      id: 5,
+      activeClass: "",
+      userThumbnail: userAvatar4,
+      userName: "Kimberly Smith",
+      notification: "commented on your picture",
+      reactionActivity: "",
+      reactionImg: user4ReactImage,
+      groupActivity: "",
+      time: "1 week ago",
+      message: "",
     },
     {
       id: 6,

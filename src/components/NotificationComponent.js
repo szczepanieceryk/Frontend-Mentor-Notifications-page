@@ -57,7 +57,7 @@ const NotificationComponent = ({
         <img
           src={reactionImg}
           alt="reaction thumbnail"
-          className={`reaction-img ${reactionImg ? "show" : "hide"}`}
+          className={`reaction-img ${reactionImg ? "active" : ""}`}
         />
         <span className="notification-time">{time}</span>
         <div className={`message-wrapper ${message ? "active" : ""}`}>

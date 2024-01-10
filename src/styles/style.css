@@ -30,7 +30,7 @@ body {
   border-radius: 0.5em;
 }
 .simple-notification-component-wrapper.active {
-  background-color: hsl(211deg, 68%, 94%);
+  background-color: hsl(210deg, 60%, 98%);
 }
 .simple-notification-component-wrapper .user-avatar-thumbnail,
 .simple-notification-component-wrapper .reaction-img {
@@ -46,6 +46,19 @@ body {
 }
 .simple-notification-component-wrapper .notification-content .user-name {
   margin-right: 0.2em;
+}
+.simple-notification-component-wrapper .notification-content .user-name,
+.simple-notification-component-wrapper .notification-content .notification-message.reaction-activity,
+.simple-notification-component-wrapper .notification-content .notification-message.group-activity {
+  cursor: pointer;
+  transition: 0.3s;
+  color: hsl(224deg, 21%, 14%);
+}
+.simple-notification-component-wrapper .notification-content .user-name:hover,
+.simple-notification-component-wrapper .notification-content .notification-message.reaction-activity:hover,
+.simple-notification-component-wrapper .notification-content .notification-message.group-activity:hover {
+  cursor: pointer;
+  color: hsl(228deg, 45%, 44%);
 }
 .simple-notification-component-wrapper .notification-content .notification-message {
   color: hsl(219deg, 14%, 63%);
@@ -64,20 +77,30 @@ body {
 .simple-notification-component-wrapper .notification-content .active-notification.active {
   background-color: hsl(1deg, 90%, 64%);
 }
-.simple-notification-component-wrapper .notification-content .reaction-img.show {
-  display: flex;
-}
-.simple-notification-component-wrapper .notification-content .reaction-img.hide {
+.simple-notification-component-wrapper .notification-content .reaction-img {
   display: none;
+}
+.simple-notification-component-wrapper .notification-content .reaction-img.active {
+  display: flex;
 }
 .simple-notification-component-wrapper .notification-content .notification-time {
   display: flex;
   color: hsl(219deg, 14%, 63%);
 }
-.simple-notification-component-wrapper .notification-content .message-wrapper.active {
+.simple-notification-component-wrapper .notification-content .message-wrapper {
+  display: none;
   margin: 0.5em auto;
   padding: 0.7em;
   border-radius: 0.3em;
   border: 0.3px solid hsl(219deg, 12%, 42%);
   color: hsl(219deg, 14%, 63%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.simple-notification-component-wrapper .notification-content .message-wrapper.active {
+  display: flex;
+}
+.simple-notification-component-wrapper .notification-content .message-wrapper:hover {
+  background-color: hsl(211deg, 68%, 94%);
+  border: 0.3px solid transparent;
 }/*# sourceMappingURL=style.css.map */
